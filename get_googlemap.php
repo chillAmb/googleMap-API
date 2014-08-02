@@ -8,10 +8,6 @@ class getGoogleMap
 	private $lat_long;
 	private $bukken_num;
 
-	function __construct() {
-		$this->set_googlemap_data();
-	}
-
 	public function set_googlemap_data() {
         $postid = $_GET['postid'];
 
@@ -84,5 +80,3 @@ class getGoogleMap
 	}
 
 }
-$gmap = new getGoogleMap();
-?>
