@@ -1,15 +1,12 @@
-<?php
-
 class getGoogleMap
 {
 	private $current_num;
-
 	private $addr;
 	private $lat_long;
 	private $bukken_num;
 
 	public function set_googlemap_data() {
-        $postid = $_GET['postid'];
+		$postid = $_GET['postid'];
 
 		$this->addr = get_post_meta($postid, '都道府県名', TRUE);
 		$this->addr .= get_post_meta($postid, '所在地名1', TRUE);
